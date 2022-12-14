@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+ body {
+  background-color: silver;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav2 {
+  list-style-type: none;
+  top: 20%;
+  padding: 0;
+  width: 5%;
+  height: 40%;
+  position: fixed;
+  font-size: 50px;
+}
+
+li {
+  float: left;
+  border-right: 3px solid white;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+
+<body>
+
+<ul class="nav">
+  <li><a href="PROFILE.HTML">PROFILE</a></li>
+  <li><a class="active" href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a href="CAREER.HTML">CAREER</a></li>
+</ul>
+
+<ul class="nav2">
+  <a href="#home">Japan</a>
+  <a href="#news">Korea</a>
+  <a href="#contact">Thailand</a>
+</ul>
+
+</body>
+</html>
