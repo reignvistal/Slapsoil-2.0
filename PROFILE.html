@@ -1,18 +1,69 @@
 <html>
-  <head>
-  </head>
-    <body>
+<head>
+<style>
+ body {
+  background-color: silver;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav2 {
+  list-style-type: none;
+  top: 20%;
+  padding: 0;
+  width: 5%;
+  height: 40%;
+  position: fixed;
+  font-size: 50px;
+}
+
+li {
+  float: left;
+  border-right: 3px solid white;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+
+<body>
 
 <ul class="nav">
-  <li><a class="active" href="PROFILE.html">PROFILE</a></li>
-  <li><a href="TRAVEL.html">TRAVEL</a></li>
-  <li><a href="CAREER.html">CAREER</a></li>
+  <li><a class="active" href="PROFILE.HTML">PROFILE</a></li>
+  <li><a href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a href="CAREER.HTML">CAREER</a></li>
 </ul>
 
 <ul class="nav2">
-  <a href="#">Fullname</a>
-  <a href="#">Favorite</a>
-  <a href="#">Hobbies</a>
+  <a href="#home">Fullname</a>
+  <a href="#news">Favorite</a>
+  <a href="#contact">Hobbies</a>
 </ul>
 
 </body>
