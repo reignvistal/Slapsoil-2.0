@@ -1,66 +1,48 @@
 <html>
 <head>
 <style>
- body {
-  background-color: silver;
-}
-
-.nav {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: orangered;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-color: blue;
 }
- 
- .nav2 {
-  list-style-type: none;
-  border: 0;
-  top: 10%;
-  padding: 0;
-  width: 25%;
-  height: 40%;
-  position: fixed;
-  font-size: 20px;
-}
-
 
 li {
   float: left;
-  border-right: 3px solid white;
+  border-right:1px solid white;
+}
+
+li:last-child {
+  border-right: none;
 }
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: white;
+  background-color: grey;
 }
 
 .active {
   background-color: black;
-  color: white;
 }
 </style>
 </head>
-
 <body>
 
-<ul class="nav">
-  <li><a class="active" href="PROFILE.html">PROFILE</a></li>
-  <li><a href="TRAVEL.html">TRAVEL</a></li>
-  <li><a href="CAREER.html">CAREER</a></li>
+<ul>
+  <li><a href="PROFILE.HTML">PROFILE</a></li>
+  <li><a class="active" href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a href="CAREER.HTML">CAREER</a></li>
 </ul>
- 
+
 <style>
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
