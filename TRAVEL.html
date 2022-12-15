@@ -1,52 +1,37 @@
 <html>
 <head>
 <style>
- body {
-  background-color: silver;
-}
-
-.nav {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: orangered;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.nav2 {
-  list-style-type: none;
-  top: 20%;
-  padding: 0;
-  width: 5%;
-  height: 40%;
-  position: fixed;
-  font-size: 50px;
+  background-color: black;
 }
 
 li {
   float: left;
-  border-right: 3px solid white;
+  border-right:3px solid white;
+}
+
+li:last-child {
+  border-right: none;
 }
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: white;
+  background-color: grey;
 }
 
 .active {
-  background-color: black;
-  color: white;
+  background-color: yellowgreen;
 }
 </style>
 </head>
@@ -55,16 +40,106 @@ li a:hover:not(.active) {
 <body>
 
 <ul class="nav">
-  <li><a href="PROFILE.html">PROFILE</a></li>
-  <li><a class="active" href="TRAVEL.html">TRAVEL</a></li>
-  <li><a href="CAREER.html">CAREER</a></li>
+  <li><a href="PROFILE.HTML">PROFILE</a></li>
+  <li><a class="active" href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a href="CAREER.HTML">CAREER</a></li>
 </ul>
 
-<ul class="nav2">
-  <a href="#home">Japan</a>
-  <a href="#news">Korea</a>
-  <a href="#contact">Thailand</a>
-</ul>
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  background-color: maroon;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onmouseover="openName(event, 'PD')">SWITZERLAND</button>
+  <button class="tablinks" onmouseover="openName(event, 'ED')">AMERICA</button>
+  <button class="tablinks" onmouseover="openName(event, 'FB')">DUBAI</button>
+</div>
+
+<div id="PD" class="tabcontent">
+  <h3><img src="switzerland.jpg"></h3>   
+</div>
+
+<div id="FB" class="tabcontent">
+
+
+  
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openName(evt, profName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(profName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
 
 </body>
 </html>
