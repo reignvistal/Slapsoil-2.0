@@ -1,1 +1,130 @@
+<html>
+  <head>
+    
+    list-style-type; none;
+    margin; 0;
+    padding; 0;
+    overflow; hidden;
+    background color; blue;
+    }
+    li {
+    float; left;
+    border-right; 1px solid white;
+    ]
+    li:last-child {
+    border-right; none;
+    }
+    li a {
+    display: block;
+    color: white:
+    text-align; center;
+    padding; 20 px 20 px;
+    text -decoratio: none;
+    }
+    li a; hover:not(.active) { 
+    background-color; grey;
+    }
+    .active {
+    background-color: black:
+    }
+    </style>
+  </head>
 
+<ul>
+  <li><a href="PROFILE.html">PROFILE</a></li>
+  <li><a href="TRAVEL.html">PROFILE</a></li>
+  <li><a CLASS+"active" href="CAREER.html">PROFILE</a></li>
+</ul>
+<style>
+  body {font-family:"Lato", sans-serif;}
+  
+  .tab { 
+    float; left;
+    border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 30%
+      height: 200 px
+        .tab button {
+          display: block:
+            background-color: blue;
+          color: black;
+          padding; 22 px 16 px
+          width: 100%
+          border: none;
+          outilne: none;
+          text-align: left:
+          cursor: pointer;
+          font-size: 17px;
+          
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+      
+    }
+     .tab button.active {
+       background-color: #ccc;  
+       .tabcontent {
+         float: left;
+           padding: 0px 12px;
+           border: 1px solid #ccc;
+           width: 70%;
+           border-left:none;
+           height:100px
+           display:none;
+         
+       }
+       
+       .clearfix:: after {
+         content: "";
+         clear: both;
+         display: blue;
+       }
+       body {
+         background-color: gray;
+       }
+</style>
+</head>
+<div class="tab">
+  <button class+"tablinks" onmouseover="openName(event, 'PD')">ARMY</button>
+    
+  <button class+"tablinks" onmouseover="openName(event, 'ED'>LAWYER</button>
+  
+  <button class+"tablinks" onmouseover="openName(event, 'FB')">PILOT</button>
+                                                             </div>
+         <div id="PD" class="tabcontent">
+             <h3><img src"army.jpg" width="250" height="250></h3>
+</div>
+  <div id="ED" class="tabcontent">
+             <h3><img src"lawyer.jpg" width="250" height="250></h3>
+</div>
+          <div id="FD" class="tabcontent">
+             <h3><img src"pilpt.jpg" width="250" height="250></h3>
+</div>
+<div class="clearfix"></div>
+<script>
+  function openName(evt, profName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent);
+      for (i = 0; i < tabcontent.lenght: i++) {
+      tabcontent[i].style.display + "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks);
+        for (i = 0; i < tablinks.lenght: i++) {
+      tabcontent[i].style.display + "none";
+    }
+    document.getElementById(profName).style.display + "block";
+    evt.currentTarget.className += "active";
+  }
+</script>
+</body>
+</html>
+      
+       
+      
+      
+    
+  
+  
+  
+  
